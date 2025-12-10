@@ -1,37 +1,35 @@
 {
   "compilerOptions": {
-    // File Layout
+    // Output
     "rootDir": "./src",
     "outDir": "./dist",
 
-    // Environment Settings
+    // Modern ESM for Node + Prisma
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "target": "ES2020",
 
-    // Type Definitions
+    // JSX & Type Helpers
     "types": ["node"],
-
-    // Outputs
-    "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true,
-
-    // Strict Type Checking
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "exactOptionalPropertyTypes": true,
+    "skipLibCheck": true,
 
     // Interop
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
 
-    // Module System
-    "isolatedModules": true,
-    "moduleDetection": "force",
+    // Strictness
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
 
-    // Other
-    "skipLibCheck": true
+    // Build Options
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // Required for ESM TypeScript
+    "isolatedModules": true,
+    "moduleDetection": "force"
   },
   "include": ["src/**/*"]
 }
