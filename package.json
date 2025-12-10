@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon  dist/index.js",
     "start": "tsc -b",
-    "build": "npm run start && npm run dev"
+    "build": "npm run start && npm run dev",
+    "migrate": "npx prisma migrate dev ",
+    "genrate": "npx prisma genrate"
   },
   "repository": {
     "type": "git",
