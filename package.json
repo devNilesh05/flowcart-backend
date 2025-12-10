@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node dist/index.js",
+    "build": "node dist/index.js",
     "start": "tsc -b",
-    "build": "npm run start && npm run dev",
+    "dev": "npm run start && npm run build",
     "migrate": "npx prisma migrate dev ",
-    "genrate": "npx prisma genrate"
+    "generate": "npx prisma generate"
   },
   "repository": {
     "type": "git",
